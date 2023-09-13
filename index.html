@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Font Family and icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<!-- Main CSS by w3.css -->
+<link rel="stylesheet" href="w3.css">
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Menu</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Picture</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Record</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Member</a> 
+    <a href="#Album" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Song</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Contact</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  
+  
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>BLACKPINK</b></h1>
+    <hr style="width:325px;border:5px solid rgb(255, 255, 255)" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Blackpink">
+      <img src="images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Jisoo">
+    
+    </div>
+
+    <div class="w3-half">
+    
+      <img src="./B-Cut_Galaxy-A_Jennie_02-1024x683.jpg" style="width:100%" onclick="onClick(this)" alt="Jennie">
+      <img src="./B-Cut_Galaxy-A_Rose_03-1024x683.jpg" style="width:100%" onclick="onClick(this)" alt="Rosé">
+      <img src="./B-Cut_Galaxy-A_Lisa_07-1024x683.jpg" style="width:100%" onclick="onClick(this)" alt="Lisa">
+    </div>
+  </div>
+  <br><br><br><br>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+
+  <div class="w3-container" id="services" style=":300px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Record.</b></h1>
+    <hr style="width:160px;border:5px solid rgb(255, 255, 255)" class="w3-round">
+    <p style="font-size:larger;"> แบล็กพิงก์ (BLACKPINK) เกิร์ลกรุ๊ปชื่อดังของประเทศเกาหลีใต้ ภายใต้สังกัด YG Entertainment ประกอบด้วยสมาชิกจำนวน 4 คน คือ จีซู, เจนนี่, โรเซ่ และ ​ลิซ่า เดบิวต์อย่างเป็นทางการเมื่อวันที่ 8 สิงหาคม 2016 พร้อมกับซิงเกิลอัลบั้ม Square One โดยมีซิงเกิลเปิดตัวอย่าง "Whistle" และ "Boombayah" ขึ้นถึงอันดับ 1 บน Gaon Digital Chart ในเกาหลีใต้ และ Billboard World Digital Song Chart ตามลำดับ ทำให้วงคว้ารางวัล Golden Disc Awards และ Seoul Music Awards สาขาศิลปินหน้าใหม่แห่งปี 2016<br><br>
+      หลังจากนั้นก็ได้ปล่อยผลงานเพลงฮิตออกมามากมาย อาทิ Playing with Fire, Stay, As If It's Your Last และ Ddu-Du Ddu-Du รวมถึงได้ร่วมร้องกับนักร้องต่างประเทศชื่อดังอย่าง Selena Gomez ในเพลง Ice Cream, Dua Lipa ในเพลง Kiss and Make Up และ Lady Gaga ในเพลง Sour Candy<br><br>
+      ทั้งนี้ ชื่อวง BLACKPINK นั้นสื่อความหมายถึงธรรมชาติของสมาชิกในวงที่มีความหลากหลายทางมิติ ทั้งความงามของหน้าตา บุคลิกลักษณะ และความสามารถที่เพียบพร้อม เต็มเปี่ยมไปด้วยพรสวรรค์และการฝึกฝนที่จริงจัง นอกจากนี้สมาชิกทุกคนต่างมีความเป็นผู้นำในแต่ละด้านได้ ทางค่ายและวงจึงตัดสินใจว่าจะไม่มีหัวหน้าวง อีกทั้งชื่อแฟนคลับอย่างเป็นทางการของ BLACKPINK คือ BLINK (บลิงก์) ที่เป็นการรวมกันของคำว่า BLACK และ PINK ซึ่งมีความหมายว่า คนที่รักและปกป้อง BLACKPINK เสมอ<br>
+
+    </p><br><br><br>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin: top 75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Member.</b></h1>
+    <hr style="width:225px;border:5px solid rgb(255, 255, 255)" class="w3-round">
+ </div>
+
+
+
+          <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <ul class="w3-ul w3-center w3-card w3-hover-shadow"> 
+      <img src="./images/team2.jpg" alt="Sandwich" style="width:100%">
+      <center><h2 style="background-color: rgb(0, 0, 0);">Jisoo</h2></center>
+      <p>
+        ชื่อจริง : คิม จีซู  <br>
+        เกิด : 3 มกราคม ปี 1995 <br>
+        ตำแหน่ง : นักร้องนำ <br>
+        ส่วนสูง : 162 ซม. <br>
+        </p>
+        <a href="https://www.instagram.com/sooyaaa__/" target="_blank">IG : sooyaaa__</a>
+        <br><br>
+    </div>
+    <div class="w3-quarter">
+      <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+      <img src="./images/team1.jpg" alt="Steak" style="width:100%">
+      <center><h2 style="background-color: rgb(255, 30, 169);">Jennie</h2></center>
+      <p> ชื่อจริง : เจนนี่ คิม<br>
+        เกิด : 16 มกราคม ปี 1996 <br>
+        ตำแหน่ง : แร็ปเปอร์, นักร้องนำ <br>
+        ส่วนสูง : 163 ซม.</p>
+        <a href="https://www.instagram.com/jennierubyjane/" target="_blank">IG : jennierubyjane</a>
+        <br><br>
+    </div>
+    <div class="w3-quarter">
+      <ul class="w3-ul w3-center w3-card w3-hover-shadow"> 
+      <img src="./images/team3.jpg" alt="Cherries" style="width:100%">
+      <center><h2 style="background-color: rgb(0, 0, 0);">Rosé</h2></center>
+      <p> ชื่อจริง : พัค แชยอง<br>
+        เกิด : 11 กุมภาพันธ์ ปี 1997<br>
+        ตำแหน่ง : นักร้องนำ<br>
+        ส่วนสูง : 168 ซม.</p>
+        <a href="https://www.instagram.com/roses_are_rosie/" target="_blank">IG : roses_are_rosie</a>
+        <br><br>
+    </div>
+    <div class="w3-quarter">
+      <ul class="w3-ul w3-center w3-card w3-hover-shadow"> 
+      <img src="./images/ll.png" alt="Pasta and Wine" style="width:100%">
+      <center><h2 style="background-color: rgb(255, 30, 169);">Lisa</h2></center>
+      <p> ชื่อจริง : ลลิษา มโนบาล<br>
+        เกิด : 27 มีนาคม  1997 <br>
+        ตำแหน่ง : แร็ปเปอร์, นักร้องนำ <br>
+        ส่วนสูง : 167 ซม.</p>
+        <a href="https://www.instagram.com/lalalalisa_m/" target="_blank">IG : lalalalisa_m</a>
+        <br><br>
+    </div>
+  </div>
+  
+        <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="Album" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Song.</b></h1>
+    <hr style="width:130px;border:5px solid rgb(255, 255, 255)" class="w3-round">
+
+    <h3 id="demo">จำนวนเพลงของแบล็กพิงก์</h3>
+    <button type="button" onclick="myFunction()">Click</button>
+    <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "32";
+    }
+    </script><br><br>
+    <center><h2 style="background-color: rgb(0, 0, 0);">Blackpink/Song</h2></center><br>
+    <h3></h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <a href="https://youtu.be/ioNng23DkIM?si=Ew-_q4UGwChMCjIH"target="_blank"><img src="./maxresdefault (6).jpg"width="230" alt=""><li class="w3-padding-16">How You Like That</li></a>
+          <a href="https://youtu.be/gQlMMD8auMs?si=1LsUNIQf_X8iuxY_"target="_blank"><img src="./maxresdefault (7).jpg"width="230" alt=""><li class="w3-padding-16">Pink Venom</li></a>
+          <a href="https://youtu.be/IHNzOHi8sJs?si=czvM4H9BR69FAzJU"target="_blank"><img src="./maxresdefault (8).jpg"width="230" alt=""><li class="w3-padding-16">DDU-DU DDU-DU</li></a>
+          <a href="https://youtu.be/YudHcBIxlYw?si=UKdbq8IFF6xS01X3"target="_blank"><img src="./maxresdefault (9).jpg"width="230" alt=""><li class="w3-padding-16">Shut Down</li></a>
+          <a href="https://youtu.be/Amq-qlqbjYA?si=PIuQoLET843g1wQn"target="_blank"><img src="./6OIbYUE4748 (1).jpg"width="230" alt=""><li class="w3-padding-16">Kill This Love</li></a>
+          <a href="https://youtu.be/YudHcBIxlYw?si=UKdbq8IFF6xS01X3"target="_blank"><img src="./maxresdefault (10).jpg"width="230" alt=""><li class="w3-padding-16">AS IF IT'S YOUR LAST</li></a>
+          <a href="https://youtu.be/UhxW9Njqqu0?si=owj_aKmsQ5cNZx0B"target="_blank"><img src="./maxresdefault (11).jpg"width="230" alt=""><li class="w3-padding-16">Typa Girl</li></a>
+          <a href="https://youtu.be/bwmSjveL3Lc?si=8Tom_DU5nOGnmpls"target="_blank"><img src="./maxresdefault (13).jpg"width="230" alt=""><li class="w3-padding-16">BOOMBAYAH</li></a>
+          <a href="https://youtu.be/gU2HqP4NxUs?si=LKWp4aTlkbX_rKaq"target="_blank"><img src="./maxresdefault (12).jpg"width="230" alt=""><li class="w3-padding-16">Pretty Savage</li></a>
+          <a href="https://youtu.be/vRXZj0DzXIA?si=k98O81kGXwXOrtPt"target="_blank"><img src="./r35rgf3768YAeGaziQK3-o.jpg"width="230" alt=""><li class="w3-padding-16">Ice Cream</li></a>
+          <a href="https://youtu.be/dyRsYk0LyA8?si=E5UBuSmvTlCtmFU7"target="_blank"><img src="./maxresdefault (14).jpg"width="230" alt=""><li class="w3-padding-16">Lovesick Girls</li></a>
+          <a href="https://youtu.be/AX3Bsiq-13k?si=nhJN0y36kIIlJJvv"target="_blank"><img src="./maxresdefault (15).jpg"width="230" alt=""><li class="w3-padding-16">Kiss and Make Up</li></a>
+          <a href="https://youtu.be/dISNgvVpWlo?si=21vVLaUKL1PrT1QD"target="_blank"><img src="./1_xo5f39mA_ri-7vU7_t1xnw.jpg"width="230" alt=""><li class="w3-padding-16">WHISTLE</li></a>
+          <a href="https://youtu.be/9pdj4iJD08s?si=Uy7oNlWoIFr401eX"target="_blank"><img src="./maxresdefault (16).jpg"width="230" alt=""><li class="w3-padding-16">Playing with fire</li></a>
+          <a href="https://youtu.be/89kTb73csYg?si=SPOujt9mhcyx87rb"target="_blank"><img src="./maxresdefault (17).jpg"width="230" alt=""><li class="w3-padding-16">Forever Young</li></a>
+          <a href="https://youtu.be/VQo4hyWfBQ4?si=IA2gyzyU_9Kkf7Yj"target="_blank"><img src="./maxresdefault (18).jpg"width="230" alt=""><li class="w3-padding-16">Tally</li></a>
+          </li>
+          
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <a href="https://youtu.be/tDg6gBankV8?si=4lD5OGsBs5JBvsTL"target="_blank"><img src="./maxresdefault (19).jpg"width="230" alt=""><li class="w3-padding-16">Love to Hate Me</li></a>
+          <a href="https://youtu.be/bqzDuRz_P7g?si=D5mjIv9-os4HqhUR"target="_blank"><img src="./maxresdefault (20).jpg"width="230" alt=""><li class="w3-padding-16">Don’t Know What to Do</li></a>
+          <a href="https://youtu.be/7WyHtSlvHD4?si=8-UCWlsTPiAiy6_V"target="_blank"><img src="./fyzj4f7xkaavnc1.jpg"width="230" alt=""><li class="w3-padding-16">Ready For Love</li></a>
+          <a href="https://youtu.be/7Hr3p1BHC_E?si=jQuoeu-Kl6m8gEe8"target="_blank"><img src="./d_20200529130408.jpg"width="230" alt=""><li class="w3-padding-16">Sour Candy</li></a>
+          <a href="https://youtu.be/K15-U0Z3Jgo?si=cm2KzcDO5FuUqQmC"target="_blank"><img src="./ดาวน์โหลด.jpg"width="230" alt=""><li class="w3-padding-16">Hard to Love</li></a>
+          <a href="https://youtu.be/FzVR_fymZw4?si=kfDsKpE7VaXrKQPC"target="_blank"><img src="./maxresdefault (21).jpg"width="230" alt=""><li class="w3-padding-16">Crazy Over You</li></a>
+          <a href="https://youtu.be/kVXazE8wR1Q?si=9AIXfy1LEbG_xrAP"target="_blank"><img src="./maxresdefault (22).jpg"width="230" alt=""><li class="w3-padding-16">Stay</li></a>
+          <a href="https://youtu.be/md9RK0aszdY?si=Y7kXWtKFkJ2nhxSO"target="_blank"><img src="./maxresdefault (24).jpg"width="230" alt=""><li class="w3-padding-16">The Happiest Girl</li></a>
+          <a href="https://youtu.be/sYUlykDe4as?si=P3huVXj7M5zxLLNw"target="_blank"><img src="./df73b6d03248350ebb8626e187efb003180aef5b.jpg"width="230" alt=""><li class="w3-padding-16">You Never Know</li></a>
+          <a href="https://youtu.be/sYUlykDe4as?si=TeXdZ0Q_sIY5LLo_"target="_blank"><img src="./maxresdefault (25).jpg"width="230" alt=""><li class="w3-padding-16">Kick It</li></a>
+          <a href="https://youtu.be/wQTjv-Xo1gY?si=Lywpj_8f1WeNAp3R"target="_blank"><img src="./maxresdefault (26).jpg"width="230" alt=""><li class="w3-padding-16">Yeah Yeah Yeah</li></a>
+          <a href="https://youtu.be/0cE1R6qt5EE?si=azbUkDHbC8J9GnUy"target="_blank"><img src="./maxresdefault (27).jpg"width="230" alt=""><li class="w3-padding-16">SO HOT</li></a>
+          <a href="https://youtu.be/atfEHiWYolc?si=RRLf0lrPrypfo_kY"target="_blank"><img src="./maxresdefault (28).jpg"width="230" alt=""><li class="w3-padding-16">Really</li></a>
+          <a href="https://youtu.be/fpimnj4SNjQ?si=SlkUG--g-6XNBCoF"target="_blank"><img src="./maxresdefault (29).jpg"width="230" alt=""><li class="w3-padding-16">See U Later</li></a>
+          <a href="https://youtu.be/CQumVRKyQEA?si=VyY8p7jKjreYBI_1"target="_blank"><img src="./maxresdefault (30).jpg"width="230" alt=""><li class="w3-padding-16">Hope Not</li></a>
+          <a href="https://youtu.be/gXBdvSj9F2I?si=y3dgy_Z6EV0HMLNq"target="_blank"><img src="./maxresdefault (31).jpg"width="230" alt=""><li class="w3-padding-16">Bet You Wanna</li></a>
+      </div>
+      
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+              <li class="w3-pink w3-xlarge w3-padding-32">Jisoo/Song</li> 
+          <a href="https://youtu.be/z50NUuwI66c?si=EamZNuvEyFTjF3D8"target="_blank"><img src="./1maxresdefault.jpg"width="250" alt=""><li class="w3-padding-16">ALL EYES ON ME</li></a>
+          <a href="https://youtu.be/YudHcBIxlYw?si=UKdbq8IFF6xS01X3"target="_blank"><img src="./maxresdefault.jpg"width="250" alt=""><li class="w3-padding-16">FLOWER</li></a>
+          </li>
+          
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+         <li class="w3-pink w3-xlarge w3-padding-32">Jennie/Song</li>
+          <a href="https://youtu.be/Ms0-G0GKexE?si=3rkEr2WtQkCCDSfv"target="_blank"><img src="./maxresdefault (1).jpg"width="250" alt=""><li class="w3-padding-16">YOU&ME</li></a>
+          <a href="https://youtu.be/b73BI9eUkjM?si=rMeavV3b57eYjbmt"target="_blank"><img src="./hq720 (1).jpg"width="250" alt=""><li class="w3-padding-16">SOLO</li></a>
+        
+      </div>
+  
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+            <li class="w3-pink w3-xlarge w3-padding-32">Rosé/Song</li>
+            <a href="https://youtu.be/CKZvWhCqx1s?si=WLNtiTs6VrjM5U2e"target="_blank"><img src="./maxresdefault (2).jpg"width="250" alt=""><li class="w3-padding-16">OH THE GROUND</li></a>
+          <a href="https://youtu.be/K9_VFxzCuQ0?si=StCEqTfvq02kz0ad"target="_blank"><img src="./hq720.jpg"width="250" alt=""><li class="w3-padding-16">GOME</li></a>
+            </li>
+            
+        </div>
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+            <li class="w3-pink w3-xlarge w3-padding-32">Lisa/Song</li>
+            <a href="https://youtu.be/awkkyBH2zEo?si=_ZD7PD3RcpEoN7wI"target="_blank"><img src="./hq720 (2).jpg"width="250" alt=""><li class="w3-padding-16">LALISA</li></a>
+            <a href="https://youtu.be/dNCWe_6HAM8?si=WOvDfKEQO61XncNx"target="_blank"><img src="./maxresdefault (5).jpg"width="250" alt=""><li class="w3-padding-16">MONEY</li></a>
+
+            
+        </div>
+       
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <br><br><br>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:200px;border:5px solid rgb(255, 255, 255)" class="w3-round">
+    <p>Fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+  
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
